@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import Router from './mini-router/Router'
-import Link from './mini-router/Link'
+import { Router, Link } from './mini-router'
 import './App.css'
 
 const About = () => {
@@ -24,7 +23,7 @@ class App extends Component {
     return (
       <div className='App'>
         <Link to='/'>Home</Link> <br />
-        <Link to='about'>About</Link>
+        <Link to='/about'>About</Link>
         <Router>
           <Home path='/' />
           <About path='/about' />
